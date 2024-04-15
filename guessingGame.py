@@ -8,12 +8,15 @@ while (1 < 2):
     if (usr == "exit"):
         print(f'Exiting after {count} wrong guesses.')
         break
-    if (int(usr) == a):
-        print(f'Exactly right after {count} wrong guesses.')
-        break
-    elif (int(usr) > a):
-        print("Too high")
-        count += 1
-    elif (int(usr) < a):
-        print("Too low")
-        count += 1
+    if (int(usr) > 9 or int(usr) < 1):
+        print("Your input is out of range.")
+    else:
+        if (int(usr) == a):
+            print(f'Exactly right after {count} wrong guesses.')
+            break
+        elif (int(usr) > a):
+            print("Too high")
+            count += 1
+        elif (int(usr) < a):
+            print("Too low")
+            count += 1
