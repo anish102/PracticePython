@@ -32,6 +32,6 @@ class Bus(Vehicle):
 car1 = Vehicle("santro", "tata", 2007, 1500000, 1200000)
 car1.profitCalculator()
 
-bus1 = Bus("ac suspension", "volvo", 2015, 10500000, 12000000)
+bus1 = Bus("ac suspension", "volvo", 2015, 10600000, 12000000)
 bus1.profitCalculator()
 print(Bus.mro())
